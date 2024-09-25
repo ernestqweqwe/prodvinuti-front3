@@ -1,3 +1,4 @@
+/* eslint-disable i18next/no-literal-string */
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useState } from 'react';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
@@ -21,10 +22,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
             data-testid="sidebar"
             className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
         >
-            <Button
-                data-testid="sidebar-toggle"
-                onClick={onToggle}
-            >
+            <Button data-testid="sidebar-toggle" onClick={onToggle}>
                 toggle
             </Button>
             <div className={cls.switchers}>
