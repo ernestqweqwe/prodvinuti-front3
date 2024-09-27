@@ -1,10 +1,20 @@
+const { off } = require('process');
+
 module.exports = {
     env: {
         browser: true,
         es2021: true,
         jest: true,
     },
-    extends: ['plugin:react/recommended', 'airbnb', 'plugin:i18next/recommended'],
+    extends: [
+        'plugin:react/recommended',
+        'airbnb',
+        'plugin:i18next/recommended',
+        'stylelint-config-standard-scss',
+        'stylelint-config-css-modules',
+        'stylelint-config-recess-order',
+        'stylelint-config-prettier-scss',
+    ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
