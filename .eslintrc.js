@@ -33,6 +33,15 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'linebreak-style': ['error', 'windows'],
+        'object-curly-newline': [
+            'error',
+            {
+                ObjectExpression: { consistent: true, multiline: true },
+                ObjectPattern: { consistent: true, multiline: true },
+                ImportDeclaration: 'never',
+                ExportDeclaration: { multiline: true, minProperties: 3 },
+            },
+        ],
         'i18next/no-literal-string': [
             'error',
             {
